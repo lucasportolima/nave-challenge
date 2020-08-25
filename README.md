@@ -1,3 +1,26 @@
+## Description
+- This project was developed with the purpose of being a test of competence for the position of front-end developer at Nave.rs.
+
+## Pages
+
+- '/': SignIn/SignUP
+- 'home': List navers
+- 'naver/${naver.id}': ADD/UPDATE naver
+
+## Heroku server
+
+- branch: master
+- site: https://nave-challenge.herokuapp.com/
+
+## Difficulties
+
+- Due to some events that made me lose time considered in the development of the project, I was unable to develop unit tests for each component. I really believe in the importance of testing and this was a feature that I would have liked to have delivered.
+
+
+## Considerations
+
+- I want to thank you for the opportunity to be participating in this selection for the Front-end developer position, it was very gratifying to carry out this challenge and I hope you like my project.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
