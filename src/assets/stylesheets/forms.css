@@ -1,0 +1,151 @@
+/*Input label animation*/
+
+.field-form {
+  outline: none;
+  padding: 0;
+  height: 48px;
+  box-shadow: none;
+  position: relative;
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 16px;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.field-form input {
+  min-height: 40px;
+  max-height: 40px;
+  transition: all 0.2s;
+  touch-action: manipulation;
+  margin-bottom: 0;
+  box-shadow: none;
+  padding: 0px 16px 0;
+  font-size: var(--body-large);
+  line-height: 26px;
+}
+
+.field-form label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--body-medium);
+  line-height: var(--heading-h6);
+  margin-bottom: 4px;
+
+  display: flex;
+  align-items: center;
+
+  color: var(--main-color);
+}
+
+.field-form input:placeholder-shown {
+  min-height: 40px;
+  max-height: 40px;
+  cursor: text;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  color: var(--anthracite-60);
+  font-family: var(--font-regular);
+  font-weight: 400;
+  font-size: var(--body-large);
+  line-height: 15px;
+  top: -27px;
+  left: 4px;
+  z-index: 99;
+  padding: 19px 15px;
+}
+
+.field-form input {
+  height: 40px;
+  border: none;
+  outline: none;
+  background: var(--white);
+  font-family: var(--font-regular);
+  color: var(--anthracite-90);
+  padding: 14px 36px 0 16px;
+  border: 1px solid #424242;
+  box-sizing: border-box;
+  transition: all 200ms ease-in-out;
+}
+
+.field-form input:focus,
+.field-form input:active {
+  border-bottom: solid 2px var(--accessible-sky);
+  transition: all 200ms ease-in-out;
+}
+
+.field-form.field-phone input {
+  padding: 10px 16px 0 48px;
+}
+
+.field-form.field-phone img {
+  position: absolute;
+  top: 23px;
+  left: 21px;
+}
+
+.field-form.field-error input {
+  background: var(--sky-10);
+  border: solid 1px var(--support-error);
+}
+
+.field-form.field-error input:focus,
+.field-form.field-error input:active {
+  border-bottom: solid 1px var(--support-error);
+}
+
+.field-form.field-error input:placeholder-shown+label {
+  background: var(--sky-10);
+}
+
+.field-form.field-error input:not(:placeholder-shown)+label,
+.field-form.field-error input:focus+label {
+  background: transparent;
+}
+
+.field-form input:disabled {
+  background: var(--anthracite-5);
+  cursor: not-allowed;
+  border: solid 1px var(--anthracite-30);
+}
+
+.field-form.field-error input:disabled:focus,
+.field-form.field-error input:disabled:active {
+  border-bottom: solid 1px var(--support-error);
+}
+
+.field-form img.field-form_reset {
+  position: absolute;
+  top: 21px;
+  left: initial;
+  cursor: pointer;
+  right: 16px;
+}
+
+.field-form .button-reset {
+  border: none;
+  background: none;
+  box-shadow: none;
+  outline: none;
+  margin: 0 0;
+  padding: 0 0;
+  position: absolute;
+  top: 17px;
+  left: initial;
+  cursor: pointer;
+  right: 16px;
+}
+
+.field-form .button-reset img.field-form_reset {
+  position: initial;
+}
+
+@media only screen and (max-width: 380px) {
+
+  .field-form input:not(:placeholder-shown)+label,
+  .field-form input:focus+label {
+    width: 85.7%;
+  }
+}

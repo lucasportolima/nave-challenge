@@ -1,0 +1,9 @@
+{
+    "transform": {
+      "^.+\\.js?$": "babel-jest",
+      "^.+\\.svg$": "jest-svg-transformer"
+    },
+    "transformIgnorePatterns": [
+      "!node_modules/react-runtime"
+    ]
+  }
