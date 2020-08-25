@@ -9,7 +9,7 @@ import logo from "../../../assets/images/logo.png";
 
 const Nav = styled.nav`
   background: var(--white);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--support-error)', endColorstr='var(--main-santander)',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--support-error)',GradientType=1 );
   height: 85px;
   display: flex;
   display: -webkit-flex;

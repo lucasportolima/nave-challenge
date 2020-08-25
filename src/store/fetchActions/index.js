@@ -38,8 +38,8 @@ export const deleteNaver = payload => {
   return async dispatch => {
     try {
       dispatch(toggleLoading());
-      await NaverService.delete(payload);
       dispatch(delNaver(payload));
+      await NaverService.delete(payload);
       dispatch(toggleLoading());
     } catch (error) {
       dispatch(toggleLoading());

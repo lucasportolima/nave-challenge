@@ -154,7 +154,6 @@ const ModalProfile = ({ t }) => {
   function setModals(actionType = null) {
     const payload = JSON.parse(JSON.stringify(modals));
     if (actionType) {
-      console.log(payload)
       payload.actions.type = actionType;
       payload.actions.show = !payload.actions.show;
     } else {

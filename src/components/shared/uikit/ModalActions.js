@@ -140,6 +140,7 @@ const ModalProfile = ({ t, removeNaverT }) => {
   function removeNaver() {
     payload.actions.type = actionTypes.removed;
     dispatch(updateModal(payload));
+    removeNaverT()
   }
 
   return (
@@ -158,7 +159,7 @@ const ModalProfile = ({ t, removeNaverT }) => {
               shadow={false}
             >{t("btn-cancel")}</Button>
             <Button
-              onClick={() => removeNaverT()}
+              onClick={() => removeNaver()}
               disabled={false}
               border={false}
               allowed={true}

@@ -25,8 +25,6 @@ const MainContainer = ({ children }) => {
   const dispatch = useDispatch()
 
   function removeNaverT() {
-    console.log(naver)
-    localStorage.setItem('id', naver.id)
     dispatch(deleteNaver(naver.id));
   }
 
